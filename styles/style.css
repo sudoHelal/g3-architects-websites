@@ -69,6 +69,16 @@ nav li a{
     margin-top: 20px;
     width: 100%;
 }
+/* Main Section start */
+.team-profile{
+    display: flex;
+    padding: 80px 300px;
+}
+main{
+    max-width: 1920px;
+}
+
+
 /* Responsive Media Queries */
 /* Mobile devices */
 @media screen and (max-width: 576px){
