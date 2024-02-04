@@ -14,6 +14,12 @@
   font-weight: 600;
   cursor: pointer;
 }
+.text-light-gray {
+  color: #727272;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 400;
+}
 /* header styles */
 header {
   background: rgba(255, 144, 14, 0.1);
@@ -56,12 +62,7 @@ nav li a {
   font-weight: 700;
   font-style: normal;
 }
-.banner-discription {
-  color: #727272;
-  font-style: normal;
-  font-size: 1rem;
-  font-weight: 400;
-}
+
 .banner img {
   margin-top: 20px;
   width: 100%;
@@ -70,10 +71,11 @@ nav li a {
 main{
     max-width: 1440px;
     width: 100%;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 .team-container{
     display: flex;
+
 }
 .team-img-container{
     display: grid;
@@ -81,9 +83,8 @@ main{
     gap: 1.5rem;
 }
 .team-content{
-    margin:auto;
-    padding-left: 4.7rem;
-    padding-right: 4.7rem;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 .team-title{
   font-size: 2.8rem;
@@ -130,7 +131,7 @@ main{
 /* Mobile devices */
 @media screen and (max-width: 576px) {
   nav,
-  nav > ul {
+  nav > ul, .team-container {
     flex-direction: column;
   }
   header {
@@ -142,13 +143,20 @@ main{
   .banner-title {
     font-size: 2rem;
   }
+  .team-img-container{
+    grid-template-columns: 1fr;
+  }
+  .team-content{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 }
 /* tablet or Medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   header {
     padding: 50px;
   }
-  nav {
+  nav, .team-container {
     flex-direction: column;
   }
 }
